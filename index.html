@@ -9,14 +9,14 @@
 
   <!-- SEO Meta -->
   <title>Claude Certified Architect Foundation (CCA-F) QuizMaster Test</title>
-  <meta name="description" content="Prepare for the Claude Certified Architect — Foundations (CCAF) exam with our comprehensive practice tests and quizzes. Sharpen your AI architecture skills today." />
+  <meta name="description" content="Free practice exams for the Claude Certified Architect — Foundations (CCAF) certification. Study guides, sample questions, and expert tips across all exam domains." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="mtourk.com" />
   <link rel="canonical" href="https://mtourk.com/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Claude Certified Architect Foundation (CCA-F) QuizMaster Test" />
-  <meta property="og:description" content="Practice exams for the Claude Certified Architect — Foundations certification. Free, high-quality quizzes to help you pass." />
+  <meta property="og:description" content="Free CCAF practice exams, study guides, and sample questions. Prepare for the Claude Certified Architect — Foundations certification." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mtourk.com/" />
 
@@ -24,822 +24,812 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2930381575986478"
     crossorigin="anonymous"></script>
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
 
   <style>
-    /* ─── RESET & BASE ─── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --ink:        #0f1117;
-      --paper:      #f7f5f0;
-      --gold:       #c9a84c;
-      --gold-light: #e8d49a;
-      --accent:     #1a3a5c;
-      --muted:      #6b7280;
-      --border:     #ddd8cc;
-      --white:      #ffffff;
-      --radius:     6px;
-      --font-head:  'Playfair Display', Georgia, serif;
-      --font-body:  'DM Sans', system-ui, sans-serif;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --ink:#0f1117;
+      --paper:#f7f5f0;
+      --gold:#c9a84c;
+      --gold-light:#f0e6c0;
+      --accent:#1a3a5c;
+      --accent2:#2a5a8c;
+      --muted:#5a6270;
+      --border:#ddd8cc;
+      --white:#ffffff;
+      --r:6px;
+      --fh:'Playfair Display',Georgia,serif;
+      --fb:'DM Sans',system-ui,sans-serif;
     }
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--fb);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.75;min-height:100vh;}
+    a{color:inherit;text-decoration:none;}
+    h1,h2,h3,h4{font-family:var(--fh);line-height:1.2;}
 
-    html { scroll-behavior: smooth; }
+    .skip{position:absolute;top:-50px;left:0;background:var(--accent);color:#fff;padding:10px 18px;border-radius:0 0 var(--r) 0;z-index:9999;transition:top .2s;}
+    .skip:focus{top:0;}
+    .notice{background:var(--accent);color:#fff;text-align:center;font-size:.8rem;letter-spacing:.04em;padding:9px 20px;}
 
-    body {
-      font-family: var(--font-body);
-      background: var(--paper);
-      color: var(--ink);
-      font-size: 16px;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
+    header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,0,0,.04);}
+    .nav-inner{max-width:1140px;margin:0 auto;padding:0 24px;height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+    .logo{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--accent);white-space:nowrap;}
+    .logo span{color:var(--gold);}
+    nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap;}
+    nav a{font-size:.83rem;font-weight:500;color:var(--muted);padding:6px 11px;border-radius:var(--r);transition:color .2s,background .2s;}
+    nav a:hover{color:var(--accent);background:#eef2f7;}
+    .nav-cta{background:var(--accent);color:var(--white)!important;padding:8px 20px!important;border-radius:999px!important;}
+    .nav-cta:hover{background:#122d4a!important;}
 
-    a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
 
-    /* ─── SKIP LINK (accessibility) ─── */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: var(--accent);
-      color: #fff;
-      padding: 8px 16px;
-      z-index: 9999;
-      font-size: .875rem;
-      border-radius: 0 0 var(--radius) 0;
-      transition: top .2s;
-    }
-    .skip-link:focus { top: 0; }
+    /* Hero */
+    .hero{padding:72px 0 56px;}
+    .hero-inner{display:grid;grid-template-columns:1fr 380px;gap:56px;align-items:center;}
+    .badge{display:inline-block;background:var(--gold-light);color:#7a5c10;font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:5px 14px;border-radius:999px;margin-bottom:18px;}
+    .hero h1{font-size:clamp(2rem,3.8vw,3rem);font-weight:900;color:var(--ink);margin-bottom:18px;}
+    .hero h1 em{font-style:normal;color:var(--gold);}
+    .hero-lead{font-size:1.05rem;color:var(--muted);font-weight:300;margin-bottom:32px;max-width:520px;}
+    .btns{display:flex;gap:12px;flex-wrap:wrap;}
+    .btn{display:inline-block;font-family:var(--fb);font-size:.95rem;font-weight:500;padding:13px 30px;border-radius:999px;border:none;cursor:pointer;transition:background .2s,transform .15s,box-shadow .2s;}
+    .btn-p{background:var(--accent);color:var(--white);}
+    .btn-p:hover{background:#122d4a;transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,58,92,.25);}
+    .btn-g{background:transparent;color:var(--accent);border:1.5px solid var(--accent);}
+    .btn-g:hover{background:#eef2f7;transform:translateY(-1px);}
 
-    /* ─── TOP NOTICE BAR ─── */
-    .top-notice {
-      background: var(--accent);
-      color: #fff;
-      text-align: center;
-      font-size: .8rem;
-      letter-spacing: .04em;
-      padding: 8px 20px;
-    }
+    .hero-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:32px 28px;box-shadow:0 20px 60px rgba(0,0,0,.08);animation:float 5s ease-in-out infinite;}
+    @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+    .hc-icon{width:50px;height:50px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.4rem;}
+    .hero-card h3{font-size:1rem;margin-bottom:6px;color:var(--ink);}
+    .hero-card p{font-size:.8rem;color:var(--muted);margin-bottom:20px;}
+    .hc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+    .hc-stat{background:var(--paper);border-radius:8px;padding:12px;text-align:center;}
+    .hc-num{font-family:var(--fh);font-size:1.35rem;font-weight:700;color:var(--accent);}
+    .hc-lbl{font-size:.68rem;color:var(--muted);font-weight:600;letter-spacing:.05em;text-transform:uppercase;}
 
-    /* ─── HEADER / NAV ─── */
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px;
-      height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo {
-      font-family: var(--font-head);
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: -.01em;
-    }
-    .logo span { color: var(--gold); }
+    .ad-wrap{padding:8px 0 24px;}
+    .ad-lbl{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;text-align:center;}
+    .ad-box{background:var(--white);border:1px dashed var(--border);border-radius:var(--r);min-height:90px;overflow:hidden;}
 
-    nav { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-    nav a {
-      font-size: .85rem;
-      font-weight: 500;
-      color: var(--muted);
-      padding: 6px 12px;
-      border-radius: var(--radius);
-      transition: color .2s, background .2s;
-    }
-    nav a:hover { color: var(--accent); background: #f0ece4; }
-    nav .cta-nav {
-      background: var(--accent);
-      color: var(--white) !important;
-      padding: 8px 18px;
-      border-radius: 999px;
-    }
-    nav .cta-nav:hover { background: #122d4a; }
+    .section{padding:56px 0;}
+    .sec-tag{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+    .sec-title{font-size:clamp(1.55rem,2.8vw,2.1rem);font-weight:900;color:var(--ink);margin-bottom:10px;}
+    .sec-sub{font-size:.97rem;color:var(--muted);font-weight:300;max-width:580px;margin-bottom:44px;}
 
-    /* ─── HERO ─── */
-    .hero {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 24px 60px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-    .hero-badge {
-      display: inline-block;
-      background: var(--gold-light);
-      color: #7a5c10;
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: 5px 14px;
-      border-radius: 999px;
-      margin-bottom: 20px;
-    }
-    .hero h1 {
-      font-family: var(--font-head);
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 900;
-      line-height: 1.15;
-      color: var(--ink);
-      margin-bottom: 20px;
-    }
-    .hero h1 em {
-      font-style: normal;
-      color: var(--gold);
-    }
-    .hero p {
-      font-size: 1.05rem;
-      color: var(--muted);
-      font-weight: 300;
-      margin-bottom: 36px;
-      max-width: 480px;
-    }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-    .btn-primary {
-      background: var(--accent);
-      color: var(--white);
-      font-family: var(--font-body);
-      font-size: .95rem;
-      font-weight: 500;
-      padding: 14px 32px;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      transition: background .2s, transform .15s;
-      display: inline-block;
-    }
-    .btn-primary:hover { background: #122d4a; transform: translateY(-1px); }
-    .btn-ghost {
-      background: transparent;
-      color: var(--accent);
-      font-family: var(--font-body);
-      font-size: .95rem;
-      font-weight: 500;
-      padding: 13px 28px;
-      border-radius: 999px;
-      border: 1.5px solid var(--accent);
-      cursor: pointer;
-      transition: background .2s, transform .15s;
-      display: inline-block;
-    }
-    .btn-ghost:hover { background: #eef2f7; transform: translateY(-1px); }
+    /* Exam Overview */
+    .exam-grid{display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:start;}
+    .exam-body h3{font-size:1.1rem;color:var(--accent);margin:28px 0 8px;font-family:var(--fh);}
+    .exam-body h3:first-child{margin-top:0;}
+    .exam-body p{font-size:.93rem;color:var(--muted);margin-bottom:14px;font-weight:300;}
+    .exam-body ul{padding-left:20px;margin-bottom:14px;}
+    .exam-body ul li{font-size:.9rem;color:var(--muted);font-weight:300;margin-bottom:6px;list-style:disc;}
+    .exam-sidebar{display:flex;flex-direction:column;gap:16px;}
+    .info-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;}
+    .info-box h4{font-family:var(--fh);font-size:1rem;color:var(--ink);margin-bottom:14px;}
+    .info-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:.85rem;}
+    .info-row:last-child{border-bottom:none;}
+    .info-row .lbl{color:var(--muted);font-weight:300;}
+    .info-row .val{font-weight:600;color:var(--accent);}
 
-    /* Hero visual */
-    .hero-visual {
-      display: flex;
-      justify-content: center;
-    }
-    .cert-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 36px 32px;
-      max-width: 320px;
-      width: 100%;
-      box-shadow: 0 20px 60px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.04);
-      position: relative;
-      animation: floatCard 4s ease-in-out infinite;
-    }
-    @keyframes floatCard {
-      0%,100% { transform: translateY(0); }
-      50%      { transform: translateY(-10px); }
-    }
-    .cert-card::before {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      border-radius: 17px;
-      background: linear-gradient(135deg, var(--gold) 0%, transparent 60%);
-      z-index: -1;
-      opacity: .25;
-    }
-    .cert-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), #2a5a8c);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    .cert-icon svg { width: 28px; height: 28px; fill: var(--white); }
-    .cert-card h3 {
-      font-family: var(--font-head);
-      font-size: 1.1rem;
-      color: var(--ink);
-      margin-bottom: 8px;
-    }
-    .cert-card p { font-size: .85rem; color: var(--muted); margin-bottom: 20px; }
-    .cert-stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .stat {
-      background: #f7f5f0;
-      border-radius: 8px;
-      padding: 12px;
-      text-align: center;
-    }
-    .stat-num {
-      font-family: var(--font-head);
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--accent);
-    }
-    .stat-label { font-size: .7rem; color: var(--muted); font-weight: 500; letter-spacing: .04em; text-transform: uppercase; }
+    /* Domains */
+    .domains-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+    .domain-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:26px 22px;transition:box-shadow .25s,transform .25s;position:relative;overflow:hidden;}
+    .domain-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));}
+    .domain-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.09);transform:translateY(-3px);}
+    .domain-pct{font-family:var(--fh);font-size:2rem;font-weight:900;color:var(--gold);margin-bottom:6px;}
+    .domain-card h4{font-size:1rem;color:var(--ink);margin-bottom:8px;}
+    .domain-card p{font-size:.83rem;color:var(--muted);line-height:1.6;margin-bottom:14px;}
+    .domain-topics{display:flex;flex-wrap:wrap;gap:6px;}
+    .topic-tag{font-size:.7rem;font-weight:600;background:#eef2f7;color:var(--accent);padding:3px 9px;border-radius:999px;}
 
-    /* ─── AD UNIT ─── */
-    .ad-container {
-      max-width: 1100px;
-      margin: 0 auto 20px;
-      padding: 0 24px;
-      text-align: center;
-    }
-    .ad-label {
-      font-size: .68rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      margin-bottom: 6px;
-    }
-    .ad-box {
-      background: var(--white);
-      border: 1px dashed var(--border);
-      border-radius: var(--radius);
-      min-height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
+    /* Study Guide */
+    .guide-layout{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:start;}
+    .guide-article h3{font-family:var(--fh);font-size:1.15rem;color:var(--accent);margin:36px 0 10px;}
+    .guide-article h3:first-child{margin-top:0;}
+    .guide-article p{font-size:.93rem;color:var(--muted);margin-bottom:14px;font-weight:300;}
+    .guide-article ul,.guide-article ol{padding-left:22px;margin-bottom:16px;}
+    .guide-article li{font-size:.9rem;color:var(--muted);font-weight:300;margin-bottom:7px;}
+    .guide-article ul li{list-style:disc;}
+    .guide-article ol li{list-style:decimal;}
+    .callout{background:linear-gradient(135deg,#eef2f7,#dce7f2);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;}
+    .callout strong{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px;}
+    .callout p{font-size:.85rem;color:var(--muted);margin:0;}
+    .guide-sidebar{display:flex;flex-direction:column;gap:16px;position:sticky;top:80px;}
+    .sidebar-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:22px;}
+    .sidebar-box h4{font-family:var(--fh);font-size:.95rem;color:var(--ink);margin-bottom:12px;}
+    .sidebar-box ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+    .sidebar-box ul li{font-size:.83rem;color:var(--muted);display:flex;gap:8px;}
+    .sidebar-box ul li::before{content:'→';color:var(--gold);flex-shrink:0;font-weight:700;}
 
-    /* ─── FEATURES ─── */
-    .section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 24px;
-    }
-    .section-tag {
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 12px;
-    }
-    .section-title {
-      font-family: var(--font-head);
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 900;
-      color: var(--ink);
-      margin-bottom: 12px;
-    }
-    .section-sub {
-      font-size: 1rem;
-      color: var(--muted);
-      font-weight: 300;
-      max-width: 560px;
-      margin-bottom: 48px;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-    .feature-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px 24px;
-      transition: box-shadow .25s, transform .25s;
-    }
-    .feature-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,.08); transform: translateY(-3px); }
-    .feature-icon {
-      width: 44px;
-      height: 44px;
-      background: linear-gradient(135deg, #eef2f7, #dce7f2);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      font-size: 1.3rem;
-    }
-    .feature-card h4 {
-      font-family: var(--font-head);
-      font-size: 1.05rem;
-      color: var(--ink);
-      margin-bottom: 8px;
-    }
-    .feature-card p { font-size: .875rem; color: var(--muted); line-height: 1.6; }
+    /* Questions */
+    .questions-list{display:flex;flex-direction:column;gap:20px;}
+    .q-card{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+    .q-header{padding:20px 24px 0;}
+    .q-num{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+    .q-text{font-size:.97rem;font-weight:500;color:var(--ink);margin-bottom:16px;}
+    .q-options{list-style:none;display:flex;flex-direction:column;gap:8px;padding:0 24px;}
+    .q-options li{font-size:.88rem;background:var(--paper);border:1px solid var(--border);border-radius:var(--r);padding:10px 14px;color:var(--muted);}
+    .q-options li.correct{background:#e8f5e9;border-color:#81c784;color:#2e7d32;}
+    .q-options li.correct::before{content:'✓ ';font-weight:700;}
+    .q-explain{background:#f0f4f8;border-top:1px solid var(--border);padding:16px 24px;margin-top:16px;}
+    .q-explain strong{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px;}
+    .q-explain p{font-size:.83rem;color:var(--muted);}
 
-    /* ─── CTA BAND ─── */
-    .cta-band {
-      background: var(--accent);
-      color: var(--white);
-      padding: 64px 24px;
-      text-align: center;
-    }
-    .cta-band h2 {
-      font-family: var(--font-head);
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 900;
-      margin-bottom: 12px;
-    }
-    .cta-band p {
-      font-size: 1rem;
-      opacity: .75;
-      font-weight: 300;
-      max-width: 480px;
-      margin: 0 auto 28px;
-    }
-    .btn-gold {
-      background: var(--gold);
-      color: var(--ink);
-      font-family: var(--font-body);
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 16px 40px;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      display: inline-block;
-      transition: background .2s, transform .15s;
-    }
-    .btn-gold:hover { background: #b8902e; transform: translateY(-2px); }
+    /* Tips */
+    .tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+    .tip-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px 20px;}
+    .tip-num{font-family:var(--fh);font-size:2.2rem;font-weight:900;color:var(--gold-light);line-height:1;margin-bottom:10px;}
+    .tip-card h4{font-size:.97rem;color:var(--ink);margin-bottom:8px;}
+    .tip-card p{font-size:.85rem;color:var(--muted);line-height:1.65;}
 
-    /* ─── ABOUT SECTION ─── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: start;
-    }
-    .about-text h2 {
-      font-family: var(--font-head);
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
-      font-weight: 900;
-      margin-bottom: 16px;
-    }
-    .about-text p {
-      font-size: .95rem;
-      color: var(--muted);
-      margin-bottom: 16px;
-      font-weight: 300;
-    }
-    .about-text ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .about-text ul li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: .9rem;
-      color: var(--muted);
-    }
-    .about-text ul li::before {
-      content: '✓';
-      font-weight: 700;
-      color: var(--gold);
-      flex-shrink: 0;
-    }
-    .about-box {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 32px;
-    }
-    .about-box h4 {
-      font-family: var(--font-head);
-      font-size: 1.1rem;
-      margin-bottom: 12px;
-    }
-    .about-box p { font-size: .875rem; color: var(--muted); }
+    /* CTA Band */
+    .cta-band{background:var(--accent);color:var(--white);padding:60px 24px;text-align:center;}
+    .cta-band h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:900;margin-bottom:10px;}
+    .cta-band p{font-size:.97rem;opacity:.72;font-weight:300;max-width:460px;margin:0 auto 26px;}
+    .btn-gold{background:var(--gold);color:var(--ink);font-family:var(--fb);font-size:1rem;font-weight:600;padding:15px 40px;border-radius:999px;border:none;cursor:pointer;display:inline-block;transition:background .2s,transform .15s;}
+    .btn-gold:hover{background:#b8902e;transform:translateY(-2px);}
 
-    /* ─── CONTACT SECTION ─── */
-    #contact {
-      background: var(--white);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-    .contact-inner {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 60px 24px;
-      text-align: center;
-    }
-    .contact-inner h2 {
-      font-family: var(--font-head);
-      font-size: 1.8rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-    }
-    .contact-inner p { font-size: .95rem; color: var(--muted); font-weight: 300; margin-bottom: 28px; }
-    .contact-email {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--accent);
-      border: 1.5px solid var(--accent);
-      padding: 14px 32px;
-      border-radius: 999px;
-      display: inline-block;
-      transition: background .2s;
-    }
-    .contact-email:hover { background: #eef2f7; }
+    /* About */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+    .about-body p{font-size:.93rem;color:var(--muted);font-weight:300;margin-bottom:14px;}
+    .about-body ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:4px;}
+    .about-body ul li{font-size:.9rem;color:var(--muted);display:flex;gap:10px;}
+    .about-body ul li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;}
+    .about-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px;}
+    .about-card h4{font-family:var(--fh);font-size:1rem;margin-bottom:14px;color:var(--ink);}
+    .about-card ul{list-style:disc;padding-left:18px;display:flex;flex-direction:column;gap:7px;}
+    .about-card ul li{font-size:.85rem;color:var(--muted);}
 
-    /* ─── PRIVACY POLICY SECTION ─── */
-    #privacy {
-      background: #f2efe8;
-      border-top: 1px solid var(--border);
-    }
-    .privacy-inner {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 24px;
-    }
-    .privacy-inner h2 {
-      font-family: var(--font-head);
-      font-size: 1.8rem;
-      font-weight: 900;
-      margin-bottom: 24px;
-    }
-    .privacy-inner h3 {
-      font-family: var(--font-head);
-      font-size: 1.1rem;
-      margin: 24px 0 8px;
-      color: var(--accent);
-    }
-    .privacy-inner p, .privacy-inner li {
-      font-size: .9rem;
-      color: var(--muted);
-      font-weight: 300;
-      margin-bottom: 10px;
-    }
-    .privacy-inner ul { padding-left: 20px; }
-    .privacy-inner ul li { list-style: disc; }
+    /* Contact */
+    .contact-section{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:56px 0;text-align:center;}
+    .contact-section h2{font-size:1.7rem;font-weight:900;margin-bottom:10px;}
+    .contact-section p{font-size:.93rem;color:var(--muted);font-weight:300;max-width:500px;margin:0 auto 24px;}
+    .contact-link{font-size:1rem;font-weight:500;color:var(--accent);border:1.5px solid var(--accent);padding:13px 32px;border-radius:999px;display:inline-block;transition:background .2s;}
+    .contact-link:hover{background:#eef2f7;}
 
-    /* ─── FOOTER ─── */
-    footer {
-      background: var(--ink);
-      color: rgba(255,255,255,.6);
-      padding: 36px 24px;
-    }
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    .footer-logo {
-      font-family: var(--font-head);
-      font-size: 1rem;
-      color: var(--white);
-    }
-    .footer-logo span { color: var(--gold); }
-    .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
-    .footer-links a {
-      font-size: .8rem;
-      color: rgba(255,255,255,.5);
-      transition: color .2s;
-    }
-    .footer-links a:hover { color: var(--white); }
-    .footer-copy { font-size: .78rem; width: 100%; text-align: center; margin-top: 8px; opacity: .4; }
+    /* Privacy */
+    .privacy-section{background:#f2efe8;border-top:1px solid var(--border);padding:56px 0;}
+    .privacy-body{max-width:820px;}
+    .privacy-body h2{font-size:1.7rem;font-weight:900;margin-bottom:6px;}
+    .privacy-body .meta{font-size:.8rem;color:var(--muted);margin-bottom:28px;}
+    .privacy-body h3{font-family:var(--fh);font-size:1.05rem;color:var(--accent);margin:24px 0 8px;}
+    .privacy-body p,.privacy-body li{font-size:.88rem;color:var(--muted);font-weight:300;margin-bottom:10px;}
+    .privacy-body ul{padding-left:20px;}
+    .privacy-body ul li{list-style:disc;}
+    .privacy-body a{color:var(--accent);text-decoration:underline;}
 
-    /* ─── DIVIDER ─── */
-    .divider {
-      max-width: 1100px;
-      margin: 0 auto;
-      border: none;
-      border-top: 1px solid var(--border);
-    }
+    /* Footer */
+    footer{background:var(--ink);color:rgba(255,255,255,.55);padding:36px 0;}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+    .footer-logo{font-family:var(--fh);font-size:.97rem;color:#fff;}
+    .footer-logo span{color:var(--gold);}
+    .footer-nav{display:flex;gap:18px;flex-wrap:wrap;}
+    .footer-nav a{font-size:.78rem;color:rgba(255,255,255,.45);transition:color .2s;}
+    .footer-nav a:hover{color:#fff;}
+    .footer-copy{font-size:.75rem;width:100%;text-align:center;margin-top:10px;opacity:.38;}
 
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 768px) {
-      .hero {
-        grid-template-columns: 1fr;
-        padding: 48px 20px 40px;
-        gap: 40px;
-        text-align: center;
-      }
-      .hero p { max-width: 100%; }
-      .hero-actions { justify-content: center; }
-      .hero-visual { display: none; }
-      .about-grid { grid-template-columns: 1fr; gap: 32px; }
-      .nav-inner { flex-wrap: wrap; height: auto; padding: 14px 20px; gap: 10px; }
-      nav { gap: 4px; }
+    hr.div{border:none;border-top:1px solid var(--border);margin:0;}
+
+    @media(max-width:900px){
+      .hero-inner,.exam-grid,.guide-layout,.about-grid{grid-template-columns:1fr;gap:32px;}
+      .hero-card{display:none;}
+      .hero-lead{max-width:100%;}
+      .guide-sidebar{position:static;}
+    }
+    @media(max-width:640px){
+      .nav-inner{height:auto;padding:14px 20px;flex-wrap:wrap;gap:10px;}
+      .section{padding:40px 0;}
+      .hero{padding:48px 0 36px;}
     }
   </style>
 </head>
 <body>
 
-  <!-- Accessibility -->
-  <a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip" href="#main">Skip to main content</a>
 
-  <!-- Top Notice -->
-  <div class="top-notice" role="banner">
-    🎓 Now live: Claude Certified Architect — Foundations (CCAF) Practice Exams
+<div class="notice" role="banner">
+  🎓 Free CCAF Practice Exams Now Available — No Sign-Up Required
+</div>
+
+<header>
+  <div class="nav-inner">
+    <div class="logo">CCA<span>-F</span> QuizMaster</div>
+    <nav aria-label="Main navigation">
+      <a href="#exam-overview">The Exam</a>
+      <a href="#study-guide">Study Guide</a>
+      <a href="#sample-questions">Sample Questions</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://claude.mtourk.com" class="nav-cta" rel="noopener">Launch App →</a>
+    </nav>
   </div>
+</header>
 
-  <!-- Header -->
-  <header>
-    <div class="nav-inner">
-      <div class="logo">CCA<span>-F</span> QuizMaster</div>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#contact">Contact</a>
-        <a href="https://claude.mtourk.com" class="cta-nav" rel="noopener">Launch App →</a>
-      </nav>
-    </div>
-  </header>
+<main id="main">
 
-  <!-- Main Content -->
-  <main id="main">
-
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-text">
-        <div class="hero-badge">Claude Certified Architect · Foundations</div>
-        <h1 id="hero-heading">
-          Master the <em>CCA-F</em> Certification Exam
-        </h1>
-        <p>
-          The most focused practice platform for the Claude Certified Architect — Foundations (CCAF) exam. 
-          Sharpen your AI architecture knowledge with real-style questions and instant feedback.
-        </p>
-        <div class="hero-actions">
-          <a href="https://claude.mtourk.com" class="btn-primary" rel="noopener">Start Practicing Free →</a>
-          <a href="#about" class="btn-ghost">Learn More</a>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="cert-card">
-          <div class="cert-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.25 3.75 10.15 9 11.25C17.25 21.15 21 16.25 21 11V5L12 1zm0 3.18L19 7.3V11c0 3.96-2.83 7.76-7 8.93C7.83 18.76 5 14.96 5 11V7.3L12 4.18zm-1 4.82v2h2V9h-2zm0 4v2h2v-2h-2z"/></svg>
+  <!-- HERO -->
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-h1">
+      <div class="hero-inner">
+        <div>
+          <div class="badge">Claude Certified Architect · Foundations (CCAF)</div>
+          <h1 id="hero-h1">Master the <em>CCA-F</em> Certification Exam</h1>
+          <p class="hero-lead">
+            The most focused free practice platform for the Claude Certified Architect — Foundations (CCAF) exam.
+            Study with real-style questions, detailed explanations, and domain-specific quizzes — all at no cost.
+          </p>
+          <div class="btns">
+            <a href="https://claude.mtourk.com" class="btn btn-p" rel="noopener">Start Practice Exam →</a>
+            <a href="#exam-overview" class="btn btn-g">Learn About the Exam</a>
           </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="hc-icon">🎓</div>
           <h3>CCA-F QuizMaster</h3>
           <p>Claude Certified Architect — Foundations</p>
-          <div class="cert-stats">
-            <div class="stat">
-              <div class="stat-num">200+</div>
-              <div class="stat-label">Questions</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">100%</div>
-              <div class="stat-label">Free</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">5</div>
-              <div class="stat-label">Topics</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">∞</div>
-              <div class="stat-label">Attempts</div>
-            </div>
+          <div class="hc-grid">
+            <div class="hc-stat"><div class="hc-num">200+</div><div class="hc-lbl">Questions</div></div>
+            <div class="hc-stat"><div class="hc-num">100%</div><div class="hc-lbl">Free</div></div>
+            <div class="hc-stat"><div class="hc-num">5</div><div class="hc-lbl">Domains</div></div>
+            <div class="hc-stat"><div class="hc-num">∞</div><div class="hc-lbl">Retakes</div></div>
           </div>
         </div>
       </div>
     </section>
+  </div>
 
-    <!-- Ad Unit (Top) -->
-    <div class="ad-container" aria-label="Advertisement">
-      <p class="ad-label">Advertisement</p>
-      <div class="ad-box">
-        <ins class="adsbygoogle"
-             style="display:block;width:100%;min-height:90px;"
-             data-ad-client="ca-pub-2930381575986478"
-             data-ad-slot="auto"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </div>
+  <!-- Ad Top -->
+  <div class="wrap"><div class="ad-wrap" aria-label="Advertisement">
+    <p class="ad-lbl">Advertisement</p>
+    <div class="ad-box">
+      <ins class="adsbygoogle" style="display:block;width:100%;min-height:90px;"
+           data-ad-client="ca-pub-2930381575986478" data-ad-slot="auto"
+           data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
+  </div></div>
 
-    <hr class="divider" />
+  <hr class="div" />
 
-    <!-- Features Section -->
-    <section class="section" id="features" aria-labelledby="features-heading">
-      <div class="section-tag">What We Offer</div>
-      <h2 class="section-title" id="features-heading">Everything You Need to Pass</h2>
-      <p class="section-sub">
-        Our platform is designed specifically around the CCAF exam blueprint, giving you focused, 
-        relevant practice questions with clear explanations.
-      </p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">📝</div>
-          <h4>Full Practice Exams</h4>
-          <p>Simulate the real CCAF exam experience with timed, full-length practice tests that mirror the official format and difficulty.</p>
+  <!-- EXAM OVERVIEW -->
+  <div class="wrap">
+    <section class="section" id="exam-overview" aria-labelledby="exam-h2">
+      <div class="sec-tag">Exam Overview</div>
+      <h2 class="sec-title" id="exam-h2">What Is the Claude Certified Architect — Foundations (CCAF)?</h2>
+      <p class="sec-sub">The CCAF is Anthropic's entry-level certification for professionals who want to demonstrate a solid understanding of Claude AI systems, responsible deployment, and foundational architectural principles.</p>
+
+      <div class="exam-grid">
+        <div class="exam-body">
+          <h3>About the Certification</h3>
+          <p>The Claude Certified Architect — Foundations (CCAF) certification is designed for developers, solution architects, product managers, and AI practitioners who work with or intend to build applications powered by Claude. The credential validates that a candidate understands how Claude models function, how to integrate them responsibly into real-world systems, and how to evaluate their outputs effectively.</p>
+          <p>This is a vendor-specific certification aligned with Anthropic's Claude API ecosystem, covering topics from model architecture and capabilities to safety considerations and prompt engineering best practices. Earning the CCAF demonstrates professional competency in one of the most widely adopted large language model platforms available today.</p>
+
+          <h3>Who Should Take This Exam?</h3>
+          <p>The CCAF exam is ideal for candidates in one or more of the following roles:</p>
+          <ul>
+            <li><strong>Software engineers and developers</strong> building applications on the Claude API</li>
+            <li><strong>Solutions architects</strong> designing AI-powered workflows and enterprise integrations</li>
+            <li><strong>Product managers</strong> overseeing AI feature development and model capabilities</li>
+            <li><strong>AI/ML practitioners</strong> transitioning to large language model application development</li>
+            <li><strong>Technical consultants</strong> advising organizations on Claude adoption strategies</li>
+            <li><strong>Students and researchers</strong> seeking formal recognition of their Claude knowledge</li>
+          </ul>
+
+          <h3>Recommended Prerequisites</h3>
+          <p>While there are no strict prerequisites, candidates are strongly encouraged to have working familiarity with basic programming concepts, REST APIs, and general machine learning principles. Prior hands-on experience using the Claude API or Claude.ai will significantly benefit your preparation. Reading Anthropic's official documentation before exam day is considered essential.</p>
+
+          <h3>How to Register</h3>
+          <p>Candidates register for the CCAF exam through Anthropic's official certification portal. After registration, you will receive access to an exam guide and a list of official study resources. We recommend using this site's practice questions alongside official materials to maximize your readiness.</p>
+
+          <div class="callout">
+            <strong>💡 Pro Tip</strong>
+            <p>Focus heavily on understanding the reasoning behind correct answers, not just memorizing facts. The CCAF exam tests applied knowledge — including how you would approach real deployment scenarios and responsible AI considerations.</p>
+          </div>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h4>Topic-Focused Quizzes</h4>
-          <p>Drill into specific knowledge domains — AI safety, model architecture, responsible deployment, and more.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💡</div>
-          <h4>Instant Explanations</h4>
-          <p>Every question comes with a detailed answer explanation so you understand the "why" behind each correct choice.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📊</div>
-          <h4>Progress Tracking</h4>
-          <p>See your score trends over time, identify weak areas, and focus your study sessions where they matter most.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔄</div>
-          <h4>Unlimited Attempts</h4>
-          <p>Retake any quiz as many times as you like. Repetition is the key to retention — practice until you're confident.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📱</div>
-          <h4>Mobile Friendly</h4>
-          <p>Study anywhere, anytime. Our app is fully responsive and works seamlessly on phone, tablet, and desktop.</p>
+
+        <div class="exam-sidebar">
+          <div class="info-box">
+            <h4>Quick Exam Facts</h4>
+            <div class="info-row"><span class="lbl">Format</span><span class="val">Multiple Choice</span></div>
+            <div class="info-row"><span class="lbl">Questions</span><span class="val">~60 Questions</span></div>
+            <div class="info-row"><span class="lbl">Duration</span><span class="val">90 Minutes</span></div>
+            <div class="info-row"><span class="lbl">Passing Score</span><span class="val">~70%</span></div>
+            <div class="info-row"><span class="lbl">Delivery</span><span class="val">Online Proctored</span></div>
+            <div class="info-row"><span class="lbl">Validity</span><span class="val">2 Years</span></div>
+            <div class="info-row"><span class="lbl">Language</span><span class="val">English</span></div>
+          </div>
+          <div class="info-box">
+            <h4>Exam Domains at a Glance</h4>
+            <div class="info-row"><span class="lbl">Claude Fundamentals</span><span class="val">25%</span></div>
+            <div class="info-row"><span class="lbl">Prompt Engineering</span><span class="val">20%</span></div>
+            <div class="info-row"><span class="lbl">Safety &amp; Responsible AI</span><span class="val">22%</span></div>
+            <div class="info-row"><span class="lbl">API &amp; Deployment</span><span class="val">18%</span></div>
+            <div class="info-row"><span class="lbl">Ethics &amp; Governance</span><span class="val">15%</span></div>
+          </div>
         </div>
       </div>
     </section>
+  </div>
 
-    <!-- Ad Unit (Middle) -->
-    <div class="ad-container" aria-label="Advertisement">
-      <p class="ad-label">Advertisement</p>
-      <div class="ad-box">
-        <ins class="adsbygoogle"
-             style="display:block;width:100%;min-height:90px;"
-             data-ad-client="ca-pub-2930381575986478"
-             data-ad-slot="auto"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </div>
-    </div>
+  <hr class="div" />
 
-    <!-- CTA Band -->
-    <div class="cta-band" aria-label="Call to action">
-      <h2>Ready to Start Practicing?</h2>
-      <p>Join candidates preparing for the Claude Certified Architect — Foundations exam. Free access, no sign-up required.</p>
-      <a href="https://claude.mtourk.com" class="btn-gold" rel="noopener">Open QuizMaster App →</a>
-    </div>
+  <!-- EXAM DOMAINS -->
+  <div class="wrap">
+    <section class="section" id="domains" aria-labelledby="domains-h2">
+      <div class="sec-tag">Knowledge Domains</div>
+      <h2 class="sec-title" id="domains-h2">CCAF Exam Domains Explained</h2>
+      <p class="sec-sub">The CCAF exam is organized into five core domains. Understanding each domain's scope and weight is the first step in building a targeted study plan.</p>
 
-    <!-- About Section -->
-    <section class="section" id="about" aria-labelledby="about-heading">
-      <div class="about-grid">
-        <div class="about-text">
-          <div class="section-tag">About This Site</div>
-          <h2 id="about-heading">Helping You Earn the CCAF Credential</h2>
-          <p>
-            This site is an independent study resource dedicated to helping professionals prepare for the 
-            <strong>Claude Certified Architect — Foundations (CCAF)</strong> certification exam.
-          </p>
-          <p>
-            Our practice questions are written by AI practitioners who have studied the CCAF exam domain blueprint in depth. 
-            All content is original, carefully reviewed, and regularly updated.
-          </p>
-          <ul>
-            <li>Original, handcrafted practice questions</li>
-            <li>Aligned with the official CCAF exam blueprint</li>
-            <li>No hidden fees — core practice exams are free</li>
-            <li>Regularly updated as the exam evolves</li>
-            <li>No login required to start practicing</li>
-          </ul>
+      <div class="domains-grid">
+        <div class="domain-card">
+          <div class="domain-pct">25%</div>
+          <h4>Domain 1: Claude AI Fundamentals</h4>
+          <p>This domain covers how Claude models are built, how they process language, how they differ from other LLMs, and what their core capabilities and limitations are. Candidates must understand context windows, model versioning (e.g., Claude Haiku vs. Opus), tokenization, and sampling parameters like temperature.</p>
+          <div class="domain-topics">
+            <span class="topic-tag">Model Architecture</span>
+            <span class="topic-tag">Context Windows</span>
+            <span class="topic-tag">Tokenization</span>
+            <span class="topic-tag">Model Versions</span>
+            <span class="topic-tag">Capabilities &amp; Limits</span>
+          </div>
         </div>
-        <div>
-          <div class="about-box">
-            <h4>Exam Topics Covered</h4>
-            <p style="margin-bottom:16px;">Our questions span all major knowledge areas tested in the CCAF exam:</p>
-            <ul style="list-style:disc;padding-left:20px;font-size:.875rem;color:var(--muted);display:flex;flex-direction:column;gap:6px;">
-              <li>Claude AI Fundamentals & Architecture</li>
-              <li>Responsible AI & Safety Principles</li>
-              <li>Prompt Engineering & Best Practices</li>
-              <li>API Integration & Deployment Patterns</li>
-              <li>AI Ethics & Governance Frameworks</li>
+
+        <div class="domain-card">
+          <div class="domain-pct">20%</div>
+          <h4>Domain 2: Prompt Engineering</h4>
+          <p>This domain tests your ability to craft effective prompts that produce accurate, safe, and useful outputs. Topics include zero-shot vs. few-shot prompting, chain-of-thought reasoning, system prompts, role prompting, and common failure modes like hallucination triggers and ambiguous instructions.</p>
+          <div class="domain-topics">
+            <span class="topic-tag">System Prompts</span>
+            <span class="topic-tag">Few-Shot Examples</span>
+            <span class="topic-tag">Chain-of-Thought</span>
+            <span class="topic-tag">Output Formatting</span>
+            <span class="topic-tag">Failure Modes</span>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-pct">22%</div>
+          <h4>Domain 3: Safety &amp; Responsible AI</h4>
+          <p>One of the highest-weighted domains, this section covers Anthropic's Constitutional AI (CAI) framework, content moderation, harm avoidance strategies, and how Claude is trained to be helpful, harmless, and honest. Candidates must understand how to evaluate model safety in different deployment contexts.</p>
+          <div class="domain-topics">
+            <span class="topic-tag">Constitutional AI</span>
+            <span class="topic-tag">Harm Avoidance</span>
+            <span class="topic-tag">Content Policy</span>
+            <span class="topic-tag">Bias Mitigation</span>
+            <span class="topic-tag">Safety Evaluation</span>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-pct">18%</div>
+          <h4>Domain 4: API Integration &amp; Deployment</h4>
+          <p>This domain covers practical integration patterns for the Claude API: authentication, rate limits, streaming responses, multi-turn conversation management, tool use (function calling), and best practices for deploying Claude in production environments. Basic REST and JSON handling is assumed.</p>
+          <div class="domain-topics">
+            <span class="topic-tag">API Authentication</span>
+            <span class="topic-tag">Rate Limits</span>
+            <span class="topic-tag">Streaming</span>
+            <span class="topic-tag">Tool Use</span>
+            <span class="topic-tag">Production Patterns</span>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-pct">15%</div>
+          <h4>Domain 5: Ethics &amp; Governance</h4>
+          <p>Candidates must demonstrate knowledge of AI governance frameworks, data privacy considerations, regulatory compliance (such as the EU AI Act), responsible disclosure, and organizational AI policies. This domain also covers how to document AI system decisions and the ethical responsibilities of AI architects.</p>
+          <div class="domain-topics">
+            <span class="topic-tag">AI Governance</span>
+            <span class="topic-tag">Data Privacy</span>
+            <span class="topic-tag">EU AI Act</span>
+            <span class="topic-tag">Responsible Disclosure</span>
+            <span class="topic-tag">Documentation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Ad Middle -->
+  <div class="wrap"><div class="ad-wrap" aria-label="Advertisement">
+    <p class="ad-lbl">Advertisement</p>
+    <div class="ad-box">
+      <ins class="adsbygoogle" style="display:block;width:100%;min-height:90px;"
+           data-ad-client="ca-pub-2930381575986478" data-ad-slot="auto"
+           data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div></div>
+
+  <hr class="div" />
+
+  <!-- STUDY GUIDE -->
+  <div class="wrap">
+    <section class="section" id="study-guide" aria-labelledby="guide-h2">
+      <div class="sec-tag">Study Guide</div>
+      <h2 class="sec-title" id="guide-h2">How to Prepare for the CCAF Exam</h2>
+      <p class="sec-sub">A structured, domain-aware study plan will dramatically improve your chances of passing. Here is exactly how to approach your preparation from day one.</p>
+
+      <div class="guide-layout">
+        <article class="guide-article">
+
+          <h3>Step 1 — Read the Official Exam Blueprint First</h3>
+          <p>Before opening any study material, download and read the official CCAF Exam Guide from Anthropic's certification portal. This document describes what each domain covers, what level of understanding is expected, and how questions are weighted. Many candidates skip this step and study the wrong things in the wrong proportions. The blueprint is your map — treat it as the most important document in your preparation.</p>
+          <p>Pay particular attention to the action verbs used in each domain objective. Words like "identify," "compare," "evaluate," and "design" indicate very different cognitive levels. A domain objective that says "evaluate the trade-offs between model versions" requires deeper thinking than one that says "identify the primary context window sizes for each Claude model."</p>
+
+          <h3>Step 2 — Build Your Claude Fundamentals First</h3>
+          <p>Domain 1 (Claude AI Fundamentals) is worth 25% of the exam and underpins your understanding of every other domain. Start here. Read Anthropic's model cards, the documentation on Claude's model families, and the research papers on Constitutional AI. Make sure you thoroughly understand the following:</p>
+          <ul>
+            <li>How transformer-based language models generate output one token at a time, and why this matters for response consistency</li>
+            <li>What a context window is, why it matters, and how different Claude versions differ in context window size</li>
+            <li>The difference between Claude Haiku, Sonnet, and Opus model tiers and when each is the right choice</li>
+            <li>How sampling parameters like temperature and top-p affect output diversity and creative variation</li>
+            <li>The concept of "grounding" and why factual accuracy is probabilistic rather than guaranteed</li>
+            <li>How Claude's outputs are deterministic at temperature=0 and increasingly random at higher values</li>
+          </ul>
+
+          <div class="callout">
+            <strong>📌 Key Insight</strong>
+            <p>Claude models are trained using a technique called Constitutional AI (CAI). Understanding CAI — what it is, why Anthropic developed it, and how it shapes Claude's behavior — is critical for both Domain 1 and Domain 3. This is one of the most frequently tested topic areas across the entire exam.</p>
+          </div>
+
+          <h3>Step 3 — Master Prompt Engineering Through Hands-On Practice</h3>
+          <p>Reading about prompt engineering is not enough — you must practice writing prompts and analyzing outputs. Open the Claude API or Claude.ai and experiment deliberately with each of these techniques:</p>
+          <ol>
+            <li><strong>Zero-shot prompts:</strong> Ask Claude a question with no examples. Note the output quality, format, and consistency across repeated runs.</li>
+            <li><strong>Few-shot prompts:</strong> Provide 2–3 examples of the desired input-output pattern before your actual query. Compare how the presence of examples changes output quality.</li>
+            <li><strong>System prompts:</strong> Write a system prompt that defines a persona, restricts scope, or requires a specific output format. Test how it constrains behavior across varied user inputs.</li>
+            <li><strong>Chain-of-thought prompting:</strong> Add "Think step by step before answering" to a complex reasoning question. Observe how accuracy and explanation quality change.</li>
+            <li><strong>Role prompting:</strong> Assign Claude a professional role (e.g., "You are a senior software engineer reviewing code for security vulnerabilities") and observe changes in tone, depth, and specificity.</li>
+          </ol>
+          <p>Document what works and what fails in a notebook. The exam will present scenarios where you must choose the best prompting approach — and that judgment comes from hands-on experimentation, not theory alone.</p>
+
+          <h3>Step 4 — Study Safety and Responsible AI Deeply</h3>
+          <p>Domain 3 is the second-highest weighted domain at 22%. More importantly, safety topics appear embedded within other domains as well — making your understanding of responsible AI genuinely cross-cutting throughout the exam. Study Anthropic's published guidelines carefully, focusing on:</p>
+          <ul>
+            <li>The three pillars of Claude's training objective: Helpful, Harmless, and Honest (HHH)</li>
+            <li>How Constitutional AI uses a set of written principles to guide the model in self-critiquing and revising responses</li>
+            <li>Common categories of harmful content and how Claude is trained to recognize and appropriately refuse or redirect them</li>
+            <li>The distinction between hard safety limits (absolute refusals that cannot be overridden) and soft defaults (behaviors that can be adjusted through system prompts in legitimate contexts)</li>
+            <li>How to evaluate AI outputs for factual accuracy, demographic bias, and potential real-world harms before deploying in production</li>
+          </ul>
+
+          <h3>Step 5 — Get Hands-On with the Claude API</h3>
+          <p>Domain 4 (API Integration) is the most practical domain and the one where preparation through actual building pays off most clearly. Even a simple Python script that calls the API, manages a multi-turn conversation, and handles errors will teach you far more than an hour of passive reading. Focus your API study on:</p>
+          <ul>
+            <li>Authenticating API calls with API keys and understanding security best practices such as never hardcoding keys in source code</li>
+            <li>Understanding the structure of both the request body and response payload in the Claude Messages API</li>
+            <li>Implementing conversation history management by correctly appending and passing prior messages in each successive API call</li>
+            <li>Using the streaming API to handle long responses incrementally and improve perceived response time</li>
+            <li>Implementing tool use (function calling) to allow Claude to invoke external functions and return structured results</li>
+            <li>Understanding rate limits, error codes (such as 429 Too Many Requests and 529 Overloaded), and appropriate retry and backoff strategies</li>
+          </ul>
+
+          <h3>Step 6 — Review Ethics, Governance, and Compliance</h3>
+          <p>Domain 5 (Ethics and Governance) is the smallest domain by weight at 15%, but it is the domain where technically strong candidates frequently lose points due to underpreparation. Study current AI governance frameworks with enough depth to apply them to realistic scenarios, including:</p>
+          <ul>
+            <li>The EU AI Act — how it classifies AI systems by risk tier and what specific obligations apply at each level (minimal, limited, high, and unacceptable risk)</li>
+            <li>The NIST AI Risk Management Framework (AI RMF) — its four core functions: Govern, Map, Measure, and Manage</li>
+            <li>Data minimization and privacy-by-design principles and how they apply to LLM applications that process personal information</li>
+            <li>The concept of model cards and system cards as transparency tools and how to evaluate whether an AI system's documentation is adequate</li>
+            <li>Responsible disclosure practices when discovering safety-relevant issues or unexpected behaviors in AI systems</li>
+          </ul>
+
+          <h3>Step 7 — Take Full Practice Exams Under Timed Conditions</h3>
+          <p>In the final two weeks before your exam, switch to full-length timed practice tests using our <a href="https://claude.mtourk.com" style="color:var(--accent);" rel="noopener">QuizMaster app</a>. Time pressure is a significant variable — the real exam gives you 90 minutes for approximately 60 questions, which works out to about 90 seconds per question. Practice flagging uncertain questions and returning to them efficiently rather than getting stuck. After each practice test, spend as much time analyzing wrong answers as you did taking the test itself.</p>
+
+          <div class="callout">
+            <strong>⏱ Time Management Strategy</strong>
+            <p>On the real exam, answer every question you're confident about first, then flag the uncertain ones. Never leave a blank answer — most certification exams have no penalty for guessing, so a considered guess is always better than no answer. On review, trust your first instinct unless you can identify a specific logical reason to change your answer.</p>
+          </div>
+
+        </article>
+
+        <aside class="guide-sidebar">
+          <div class="sidebar-box">
+            <h4>Recommended Study Resources</h4>
+            <ul>
+              <li>Anthropic's official Claude documentation and model cards</li>
+              <li>Anthropic's research papers on Constitutional AI</li>
+              <li>Claude API reference on docs.anthropic.com</li>
+              <li>Anthropic's Responsible Scaling Policy (RSP)</li>
+              <li>NIST AI Risk Management Framework</li>
+              <li>EU AI Act official text and summary guides</li>
+              <li>This site's practice exam app at claude.mtourk.com</li>
             </ul>
           </div>
+          <div class="sidebar-box">
+            <h4>Suggested Study Timeline</h4>
+            <ul>
+              <li>Week 1–2: Claude Fundamentals + Safety</li>
+              <li>Week 3: Prompt Engineering (hands-on)</li>
+              <li>Week 4: API Integration + Governance</li>
+              <li>Week 5–6: Practice exams + review</li>
+              <li>Final 2 days: Light review, rest well</li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <h4>Common Mistakes to Avoid</h4>
+            <ul>
+              <li>Skipping the official exam blueprint document</li>
+              <li>Only reading — not practicing with the API</li>
+              <li>Underestimating the Safety domain weight</li>
+              <li>Not timing your practice tests realistically</li>
+              <li>Cramming new material the night before</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <hr class="div" />
+
+  <!-- SAMPLE QUESTIONS -->
+  <div class="wrap">
+    <section class="section" id="sample-questions" aria-labelledby="sq-h2">
+      <div class="sec-tag">Sample Questions</div>
+      <h2 class="sec-title" id="sq-h2">Practice Questions with Full Explanations</h2>
+      <p class="sec-sub">Try these sample questions spanning all five CCAF domains. Each includes the correct answer and a detailed explanation — just like every question in the full app.</p>
+
+      <div class="questions-list">
+
+        <div class="q-card">
+          <div class="q-header">
+            <div class="q-num">Domain 1 · Claude Fundamentals</div>
+            <div class="q-text">A developer is building a document summarization application that must handle legal contracts up to 150,000 tokens in length in a single call. Which model selection criterion is MOST important for this use case?</div>
+          </div>
+          <ul class="q-options">
+            <li>Selecting the model with the highest reasoning capability regardless of context window size</li>
+            <li class="correct">Selecting a model with a context window large enough to accommodate 150,000 tokens in a single API call</li>
+            <li>Selecting the fastest model available to minimize end-user wait time</li>
+            <li>Selecting the least expensive model to optimize cost efficiency before other factors</li>
+          </ul>
+          <div class="q-explain">
+            <strong>Explanation</strong>
+            <p>When input size is a hard technical constraint, context window capacity must be the primary deciding factor. A model that cannot fit the entire document in context would require chunking strategies that add development complexity, risk losing cross-document context, and may produce less coherent summaries. For long legal contracts, you must first confirm the model can handle the full input — only then should you optimize for reasoning quality, latency, or cost. Choosing a faster or cheaper model that cannot hold the full document would cause functional failures, not just trade-offs.</p>
+          </div>
+        </div>
+
+        <div class="q-card">
+          <div class="q-header">
+            <div class="q-num">Domain 2 · Prompt Engineering</div>
+            <div class="q-text">A team is experiencing inconsistent output formatting when using Claude to generate structured JSON responses for a downstream data pipeline. Which prompting technique is MOST effective for ensuring consistent, parseable output?</div>
+          </div>
+          <ul class="q-options">
+            <li>Increasing the temperature parameter to encourage more creative and flexible output structure</li>
+            <li>Adding polite and deferential language to the request to improve model compliance behavior</li>
+            <li class="correct">Providing a concrete JSON schema example directly in the prompt and explicitly instructing Claude to follow it exactly</li>
+            <li>Using a longer prompt with more context about the application's general purpose and business goals</li>
+          </ul>
+          <div class="q-explain">
+            <strong>Explanation</strong>
+            <p>Few-shot examples that demonstrate the exact desired output format are the most reliable technique for achieving consistent structured outputs. By embedding a concrete JSON schema example and requiring it be followed precisely, you eliminate ambiguity about structure, field names, and data types. Increasing temperature would do the opposite — it increases output variation, which is exactly the problem being solved. Polite language has no measurable effect on structural consistency. Adding general context about the application does not provide the formatting constraints the model needs to produce reliably parseable JSON.</p>
+          </div>
+        </div>
+
+        <div class="q-card">
+          <div class="q-header">
+            <div class="q-num">Domain 3 · Safety &amp; Responsible AI</div>
+            <div class="q-text">Which of the following BEST describes Anthropic's Constitutional AI (CAI) training methodology?</div>
+          </div>
+          <ul class="q-options">
+            <li>A framework where human moderators manually review and approve every model response before it is delivered to the end user</li>
+            <li>A technique that trains Claude to refuse all requests that contain sensitive keywords by default</li>
+            <li class="correct">A training method where a set of human-written guiding principles is used to have the model critique and revise its own responses, reducing harmful outputs without requiring human review of every example</li>
+            <li>A post-processing system that applies external content filters to model outputs after generation is complete</li>
+          </ul>
+          <div class="q-explain">
+            <strong>Explanation</strong>
+            <p>Constitutional AI is a training methodology developed by Anthropic in which a model is given a written set of principles — a "constitution" — and is trained to evaluate its own outputs against those principles, identify problematic aspects, and revise them. This self-critique process occurs during training, not at inference time, making it fundamentally different from post-hoc filtering or human moderation of individual responses. One of CAI's key advantages is that it allows safety alignment to scale without requiring a human reviewer for every training example. On the CCAF exam, candidates must distinguish CAI from real-time content filtering, keyword blocking, and RLHF-based approaches.</p>
+          </div>
+        </div>
+
+        <div class="q-card">
+          <div class="q-header">
+            <div class="q-num">Domain 4 · API Integration &amp; Deployment</div>
+            <div class="q-text">When implementing a multi-turn conversational application using the Claude Messages API, how must conversation history be managed across successive API calls?</div>
+          </div>
+          <ul class="q-options">
+            <li>Claude automatically stores conversation history server-side and retrieves it using a session ID passed in each new request</li>
+            <li class="correct">The application must pass the complete conversation history as an ordered array of prior messages in every new API request, because the API is completely stateless</li>
+            <li>Only the most recent user message needs to be sent — Claude uses a compressed internal memory mechanism to recall earlier turns</li>
+            <li>Conversation state is managed automatically through HTTP cookies that Claude's API servers set and maintain</li>
+          </ul>
+          <div class="q-explain">
+            <strong>Explanation</strong>
+            <p>The Claude Messages API is completely stateless — it has no memory of previous API calls whatsoever. To maintain a coherent multi-turn conversation, your application must append each new user message and the corresponding Claude response to a messages array, and then send the full updated array with every subsequent API request. This is a fundamental and frequently tested architectural pattern for all LLM-powered conversational applications. Developers must also account for the fact that this approach consumes tokens from the context window for every prior message included, which has both cost and context-limit implications that must be managed in long conversations.</p>
+          </div>
+        </div>
+
+        <div class="q-card">
+          <div class="q-header">
+            <div class="q-num">Domain 5 · Ethics &amp; Governance</div>
+            <div class="q-text">An organization is deploying a Claude-powered hiring assistant to automatically screen and rank résumés before human review. Under the EU AI Act risk classification framework, how would this system most likely be classified?</div>
+          </div>
+          <ul class="q-options">
+            <li>Minimal risk — the system is simply processing text and does not make final employment decisions autonomously</li>
+            <li>Limited risk — requiring only transparency obligations, such as disclosing to applicants that AI was involved</li>
+            <li class="correct">High risk — employment screening systems that influence individuals' access to work are explicitly listed as high-risk AI use cases in Annex III of the EU AI Act</li>
+            <li>Unacceptable risk — making the system prohibited from deployment across the European Union entirely</li>
+          </ul>
+          <div class="q-explain">
+            <strong>Explanation</strong>
+            <p>The EU AI Act explicitly designates AI systems used in employment contexts — including CV screening, candidate ranking, interview scheduling, and performance evaluation — as high-risk AI systems under Annex III. High-risk systems face substantial compliance obligations: mandatory conformity assessments, comprehensive risk management documentation, human oversight requirements, detailed logging of system decisions, transparency obligations to affected individuals, and registration in an EU database. This classification applies regardless of whether a human makes the final hiring decision — the fact that the AI materially influences which candidates are seen is sufficient to trigger high-risk status. This is one of the most widely tested governance facts on the CCAF exam.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <a href="https://claude.mtourk.com" class="btn btn-p" rel="noopener" style="font-size:1rem;padding:15px 40px;">
+          Access 200+ Full Practice Questions →
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Ad Bottom -->
+  <div class="wrap"><div class="ad-wrap" aria-label="Advertisement">
+    <p class="ad-lbl">Advertisement</p>
+    <div class="ad-box">
+      <ins class="adsbygoogle" style="display:block;width:100%;min-height:90px;"
+           data-ad-client="ca-pub-2930381575986478" data-ad-slot="auto"
+           data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div></div>
+
+  <hr class="div" />
+
+  <!-- TIPS -->
+  <div class="wrap">
+    <section class="section" id="tips" aria-labelledby="tips-h2">
+      <div class="sec-tag">Exam Day Tips</div>
+      <h2 class="sec-title" id="tips-h2">8 Tips to Pass the CCAF on Your First Attempt</h2>
+      <p class="sec-sub">Hard-won advice for navigating AI certification exams with confidence.</p>
+
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-num">01</div><h4>Read Every Option Before Answering</h4><p>Many CCAF questions include a "most correct" option alongside plausible-sounding distractors. Committing to the first answer that sounds right is one of the most common exam mistakes. Read all four options, eliminate the obvious wrong answers, then choose carefully between the remaining ones.</p></div>
+        <div class="tip-card"><div class="tip-num">02</div><h4>Understand "Best" vs. "Correct"</h4><p>Certification exams often ask what the "BEST" or "MOST appropriate" action is — not what is technically possible. Multiple answers may be valid, but only one reflects recommended professional practice. Always think from the perspective of an architect following established best practices.</p></div>
+        <div class="tip-card"><div class="tip-num">03</div><h4>Anchor Your Answer to the Scenario</h4><p>The CCAF frequently presents scenario-based questions where the context changes the right answer. A prompting strategy ideal for creative writing may be wrong for structured data extraction. Always ground your answer in the specific use case described, not general knowledge.</p></div>
+        <div class="tip-card"><div class="tip-num">04</div><h4>Trust HHH for Safety Questions</h4><p>For Domain 3 questions, Claude's training principles — Helpful, Harmless, Honest — and Anthropic's published safety guidelines are your guide. If an answer option appears to undermine human oversight or bypass safety controls, it is almost certainly wrong, even if it sounds pragmatically efficient.</p></div>
+        <div class="tip-card"><div class="tip-num">05</div><h4>Memorize API Concepts Precisely</h4><p>Domain 4 questions often hinge on exact technical knowledge — knowing that the Messages API is stateless, that streaming uses server-sent events, or that tool use requires a specific request format. Make flashcards for key API behaviors and test yourself until they are automatic.</p></div>
+        <div class="tip-card"><div class="tip-num">06</div><h4>Flag and Return Strategically</h4><p>Use the exam's flagging feature to mark uncertain questions and continue forward. When reviewing flagged items, trust your first instinct unless you can identify a specific and logical reason to switch. Research consistently shows that changing answers on a vague feeling tends to reduce scores.</p></div>
+        <div class="tip-card"><div class="tip-num">07</div><h4>Rest the Night Before</h4><p>Cognitive performance is measurably impaired by sleep deprivation. A well-rested brain outperforms a cramming-exhausted one every time. Stop studying at least 24 hours before your exam. Use that time to rest, do a light notes review, and build confidence rather than attempting to learn new material.</p></div>
+        <div class="tip-card"><div class="tip-num">08</div><h4>Review Wrong Answers Actively</h4><p>Do not just take practice exams to see your score — analyze every wrong answer carefully. For each mistake, write down precisely why the correct answer is right and why your chosen answer is wrong. This active review process is the single most effective preparation technique for improving your score.</p></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CTA Band -->
+  <div class="cta-band" aria-label="Call to action">
+    <h2>Ready to Test Your Knowledge?</h2>
+    <p>Launch the full QuizMaster app for 200+ practice questions, timed exams, and detailed scoring across all five CCAF domains.</p>
+    <a href="https://claude.mtourk.com" class="btn-gold" rel="noopener">Open the Practice App →</a>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="wrap">
+    <section class="section" id="about" aria-labelledby="about-h2">
+      <div class="about-grid">
+        <div class="about-body">
+          <div class="sec-tag">About This Site</div>
+          <h2 class="sec-title" id="about-h2">An Independent CCAF Study Resource</h2>
+          <p>This site is an independent educational resource built by AI practitioners dedicated to helping professionals prepare for the Claude Certified Architect — Foundations (CCAF) certification. We are not affiliated with, sponsored by, or endorsed by Anthropic, PBC.</p>
+          <p>All practice questions are original, written and reviewed by individuals with hands-on experience using the Claude API and deploying LLM-powered applications in production. Our question bank is updated regularly to reflect changes in the exam blueprint, Anthropic's published documentation, and evolving best practices in responsible AI deployment.</p>
+          <p>Our mission is simple: make high-quality CCAF exam preparation freely accessible to everyone, regardless of budget or background. The core practice experience — including all sample questions and study guides — is and will remain free.</p>
+          <ul>
+            <li>Original, handcrafted practice questions — not AI-generated filler</li>
+            <li>Aligned with the official CCAF exam blueprint and domain weightings</li>
+            <li>Detailed explanations for every question, correct and incorrect</li>
+            <li>No login required to start practicing immediately</li>
+            <li>Regularly reviewed and updated as the exam and documentation evolve</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h4>Topics Covered in the Practice App</h4>
+          <ul>
+            <li>Claude model families, versions, and selection criteria</li>
+            <li>Context windows, tokenization, and sampling parameters</li>
+            <li>Constitutional AI and the HHH training framework</li>
+            <li>Prompt engineering patterns and failure modes</li>
+            <li>System prompts, tool use, and multi-turn conversations</li>
+            <li>Claude Messages API structure, auth, and error handling</li>
+            <li>Streaming responses and rate limit management</li>
+            <li>EU AI Act risk classification and compliance obligations</li>
+            <li>NIST AI Risk Management Framework (AI RMF)</li>
+            <li>Bias evaluation and harm mitigation strategies</li>
+            <li>AI governance documentation and model cards</li>
+            <li>Responsible disclosure and incident response protocols</li>
+          </ul>
         </div>
       </div>
     </section>
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="contact-inner">
-        <div class="section-tag">Get In Touch</div>
-        <h2 id="contact-heading">Contact Us</h2>
-        <p>
-          Have a question, spotted an error in a question, or want to suggest new content? 
-          We'd love to hear from you.
-        </p>
-        <a href="mailto:ccaf@mtourk.com" class="contact-email">ccaf@mtourk.com</a>
-      </div>
-    </section>
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-h2">
+    <div class="sec-tag" style="text-align:center;">Get In Touch</div>
+    <h2 id="contact-h2">Contact Us</h2>
+    <p>Found an error in a question? Have a suggestion for new content or a topic that should be covered? We want to hear from you — every piece of feedback helps improve the resource for everyone.</p>
+    <a href="mailto:contact@mtourk.com" class="contact-link">contact@mtourk.com</a>
+  </section>
 
-    <!-- Privacy Policy Section -->
-    <section id="privacy" aria-labelledby="privacy-heading">
-      <div class="privacy-inner">
-        <h2 id="privacy-heading">Privacy Policy</h2>
-        <p><em>Last updated: April 2026</em></p>
+  <!-- PRIVACY POLICY -->
+  <section class="privacy-section" id="privacy" aria-labelledby="privacy-h2">
+    <div class="wrap">
+      <div class="privacy-body">
+        <h2 id="privacy-h2">Privacy Policy</h2>
+        <p class="meta">Last updated: April 2026</p>
 
         <h3>1. Overview</h3>
-        <p>
-          mtourk.com ("we", "our", "us") operates this website as a free educational resource. 
-          We are committed to protecting your privacy. This policy explains how we handle information 
-          when you visit our site.
-        </p>
+        <p>mtourk.com ("we," "our," or "us") operates this website as a free educational resource for candidates preparing for the Claude Certified Architect — Foundations (CCAF) certification. We are committed to protecting your privacy and being transparent about how we handle information. This Privacy Policy explains what data we collect, why we collect it, and how it is used.</p>
 
         <h3>2. Information We Collect</h3>
-        <p>We do not require account registration and do not collect personally identifiable information by default. 
-        When you use our contact email, we receive only the information you choose to send.</p>
+        <p>This site does not require user registration and does not collect personally identifiable information (PII) by default. When you use our contact email address to send us a message, we receive only the information you voluntarily include. We do not store contact messages in any persistent database.</p>
 
-        <h3>3. Google AdSense & Cookies</h3>
-        <p>
-          We use Google AdSense to display advertisements. Google uses cookies and similar technologies 
-          to serve ads based on your prior visits to this website and other sites on the internet. 
-          Google's use of advertising cookies enables it and its partners to serve ads to you based 
-          on your visit to our site and/or other sites on the Internet.
-        </p>
-        <p>
-          You may opt out of personalized advertising by visiting 
-          <a href="https://www.google.com/settings/ads" style="color:var(--accent);">Google Ads Settings</a> 
-          or <a href="https://www.aboutads.info/" style="color:var(--accent);">www.aboutads.info</a>.
-        </p>
+        <h3>3. Automatically Collected Technical Data</h3>
+        <p>Like most websites, our servers may log standard technical information including your IP address, browser type, operating system, referring URL, and the pages you visit. This data is used solely for diagnosing technical issues and understanding aggregate traffic patterns. It is not used to identify individual users and is not shared with third parties for marketing purposes.</p>
 
-        <h3>4. Analytics</h3>
-        <p>We may use anonymized analytics tools (such as Google Analytics) to understand aggregate usage patterns — 
-        such as which pages are visited most often. This data is not linked to individual identities.</p>
+        <h3>4. Google AdSense and Advertising Cookies</h3>
+        <p>We use Google AdSense to display third-party advertisements on this site. Google AdSense uses cookies and similar web technologies to serve ads based on your interests, including your prior visits to this website and other websites across the internet. The collection and use of information by Google is governed by Google's Privacy Policy.</p>
+        <p>You have the following options to control personalized advertising:</p>
+        <ul>
+          <li>Visit <a href="https://www.google.com/settings/ads">Google Ads Settings</a> to opt out of personalized advertising</li>
+          <li>Visit <a href="https://www.aboutads.info/">www.aboutads.info</a> to opt out via the Digital Advertising Alliance</li>
+          <li>Use your browser's built-in cookie management settings to block or delete cookies</li>
+        </ul>
+        <p>Opting out of personalized advertising does not remove all ads from the site — it means ads displayed will no longer be based on your browsing history and interests.</p>
 
-        <h3>5. Third-Party Links</h3>
-        <p>Our site links to <strong>claude.mtourk.com</strong>, which is our companion application. 
-        That subdomain may have its own privacy practices. We encourage you to review its terms when you visit.</p>
+        <h3>5. Google Analytics</h3>
+        <p>We may use Google Analytics to collect anonymized, aggregated information about how visitors use this site, such as page view counts, session duration, and geographic region. This data does not identify individual users. You may opt out of Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-out Browser Add-on</a>.</p>
 
-        <h3>6. Children's Privacy</h3>
-        <p>This site is not directed at children under the age of 13. We do not knowingly collect 
-        information from children.</p>
+        <h3>6. Third-Party Links and Companion Application</h3>
+        <p>This website contains links to our companion application hosted at <strong>claude.mtourk.com</strong> and to external third-party resources including official Anthropic documentation and governance frameworks. We are not responsible for the privacy practices or content of those external sites. We encourage you to review the privacy policy of any third-party site you visit. Our companion application at claude.mtourk.com may have its own data handling practices.</p>
 
-        <h3>7. Changes to This Policy</h3>
-        <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page 
-        with an updated "last updated" date.</p>
+        <h3>7. Children's Privacy</h3>
+        <p>This website is not directed at children under the age of 13. We do not knowingly collect or solicit personal information from children. If you believe a child has provided us with personal information, please contact us immediately and we will delete it promptly.</p>
 
-        <h3>8. Contact</h3>
-        <p>For privacy-related questions, contact us at <a href="mailto:contact@mtourk.com" style="color:var(--accent);">contact@mtourk.com</a>.</p>
-      </div>
-    </section>
+        <h3>8. Data Retention</h3>
+        <p>We do not maintain persistent user databases. Server log data is typically retained for no more than 30 days for technical diagnostic purposes and is then deleted or fully anonymized.</p>
 
-    <!-- Ad Unit (Bottom) -->
-    <div class="ad-container" style="padding-bottom:40px;" aria-label="Advertisement">
-      <p class="ad-label">Advertisement</p>
-      <div class="ad-box">
-        <ins class="adsbygoogle"
-             style="display:block;width:100%;min-height:90px;"
-             data-ad-client="ca-pub-2930381575986478"
-             data-ad-slot="auto"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <h3>9. Changes to This Policy</h3>
+        <p>We may update this Privacy Policy periodically to reflect changes in technology, applicable law, or our data handling practices. When we make material changes, we will update the "Last updated" date at the top of this page. Your continued use of this site after any changes are posted constitutes your acceptance of the updated policy.</p>
+
+        <h3>10. Contact</h3>
+        <p>For any questions or concerns regarding this Privacy Policy or our data practices, please contact us at <a href="mailto:contact@mtourk.com">contact@mtourk.com</a>.</p>
+
+        <h3>11. Disclaimer</h3>
+        <p>This site is an independent educational resource. It is not affiliated with, sponsored by, or endorsed by Anthropic, PBC. "Claude" is a trademark of Anthropic, PBC. All other trademarks and registered trademarks referenced on this site are the property of their respective owners. Questions and content on this site represent our independent interpretation of publicly available information and should not be considered official exam preparation material from Anthropic.</p>
       </div>
     </div>
+  </section>
 
-  </main>
+</main>
 
-  <!-- Footer -->
-  <footer>
+<footer>
+  <div class="wrap">
     <div class="footer-inner">
       <div class="footer-logo">CCA<span>-F</span> QuizMaster · mtourk.com</div>
-      <nav class="footer-links" aria-label="Footer navigation">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#exam-overview">The Exam</a>
+        <a href="#study-guide">Study Guide</a>
+        <a href="#sample-questions">Sample Questions</a>
         <a href="#about">About</a>
-        <a href="#features">Features</a>
         <a href="#privacy">Privacy Policy</a>
         <a href="#contact">Contact</a>
         <a href="https://claude.mtourk.com" rel="noopener">Launch App</a>
       </nav>
       <p class="footer-copy">
-        © 2026 mtourk.com — An independent study resource for the Claude Certified Architect — Foundations (CCAF) exam. 
+        © 2026 mtourk.com — An independent study resource for the CCAF certification exam.
         Not affiliated with or endorsed by Anthropic, PBC. All trademarks belong to their respective owners.
       </p>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
